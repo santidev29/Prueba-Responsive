@@ -21,8 +21,8 @@
         background-color:white;
         color:black;
         display: flex;
-        padding-top: 13px;
-        padding-bottom: 13px;
+        padding-top: 12px;
+        padding-bottom: 12px;
         justify-content: space-between;
         align-items: center;
     }
@@ -44,6 +44,7 @@
         display: flex;
         margin-right: 20px;
         font-size: 15px;
+        gap: 5px;
     }
     
     footer {
@@ -61,7 +62,14 @@
     }
 
     .lang {
-        /*display: flex;*/
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .en {
+    width: 20px;
+    height: 15px;
     }
 
     @media screen and (max-width: 720px) {
@@ -87,20 +95,18 @@
     .headerlinks,
     .logoh,
     footer {
-        font-size: 58%;
+        font-size: 55%;
     }
 
     body {
         margin: 0px;
     }
-    header {
-        height: auto;
-        width: auto;
+    .logoh {
+        margin-left: 2%;
     }
     
     footer {
-        height: auto;
-        width: auto;
+        
     }
     }
 
@@ -116,7 +122,7 @@
         <div class="headerlinks">
             <div>globalbasquetrader@gmail.com</div>
             <div class="lang">
-               <!--<img class ="en" src="./Images/download.png">-->
+              <img class ="en" src="./Images/download.png">
                <div>EN</div>
             </div>
        </div>
