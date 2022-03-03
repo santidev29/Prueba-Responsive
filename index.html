@@ -4,40 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lan Access Control</title>
+    <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
 </head>
 
 <style>
 
+
+
     body {
         margin: 0px;
+        font-family: century-gothic;
     }
 
     header {
-        background-color: black;
-        color: white;
+        background-color:white;
+        color:black;
         display: flex;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 13px;
+        padding-bottom: 13px;
         justify-content: space-between;
+        align-items: center;
     }
 
     .logoh{
         display: flex;
-        margin-left: 5px;
+        margin-left: 20px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .logo {
+    width: 50px;
+    height: 30px;
+    margin: 0px;
     }
 
     .headerlinks {
         display: flex;
-        margin-right: 5px;
+        margin-right: 20px;
+        font-size: 15px;
     }
     
     footer {
         background-color: tomato;
+        font-size: 15px;
         display: flex;
         justify-content: center;
-        padding-top: 10px;
-        padding-bottom: 10px;    
+        padding-top: 13px;
+        padding-bottom: 13px;
+        margin: 0px;
     }
 
     main {
@@ -48,37 +64,39 @@
         /*display: flex;*/
     }
 
-    .logo {
-    width: 30px;
-    height: 15px;
-    margin: 0px;
-    }
-
     @media screen and (max-width: 720px) {
         html {
         font-size: 70.5%;
     }}
 
     @media screen and (max-width: 420px) {
-        html {
-        font-size: 65.5%;
+    
+    .headerlinks,
+    .logoh,
+    footer {
+        font-size: 70%;
     }
     }
 
     @media screen and (max-width: 320px) {
-    html {
-        font-size: 60.5%;
+
+    .headerlinks,
+    .logoh,
+    footer {
+        font-size: 60%;
     }
+
     body {
         margin: 0px;
     }
     header {
-        margin: 0px;
         height: auto;
         width: auto;
     }
+    
     footer {
-        justify-items: center;
+        height: auto;
+        width: auto;
     }
     }
 
@@ -88,7 +106,7 @@
     
     <header>
         <div class="logoh">
-            <!--<img class="logo" src="./Images/logo.png"></img>-->
+            <img class="logo" src="./Images/logo.png"></img>
             <div class="LAC"> Lan Access Control</div>
         </div>
         <div class="headerlinks">
