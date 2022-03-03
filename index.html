@@ -77,8 +77,27 @@
         margin-right: auto;
     }
 
+    .container2 {
+        background-image: url("Images/IMG_5354.JPG");
+        background-repeat: no-repeat;
+        background-size: 400%;
+        max-height: 1000px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .foto2 {
+        width: 350px;
+        height: 185px;
+        opacity: 90%;
+        border-radius: 2%;
+        box-shadow: 1px 1px 1px 1px;
+    }
+
     footer {
-        background-color: tomato;
+        background-color: white;
         font-size: 15px;
         display: flex;
         justify-content: center;
@@ -122,6 +141,10 @@
     body {
         margin: 0px;
     }
+
+    .foto2 {
+        width: 100%;
+    }
     footer {
         font-size: 10px;
         margin: 0px;
@@ -153,9 +176,18 @@
 
     .matrix {
         justify-content: center;
-        width: 80%;
-        height: 80%;
+        width: 65%;
+        height: 65%;
     }
+
+    .container2 {
+        background-size: 1000%;
+    }
+
+    .foto2 {
+        width: 100%;
+    }
+
     
     footer {
         font-size: 8px;
@@ -166,11 +198,12 @@
 
     @media screen and (max-width: 655px) and (orientation: landscape) {
 
-    .headerlinks,
+        .headerlinks,
     .logoh,
     footer {
         font-size: 55%;
         padding-left: 0%;
+
     }
 
     .headerlinks {
@@ -185,11 +218,27 @@
         
     }
 
+    .matrix {
+        justify-content: center;
+        width: 65%;
+        height: 65%;
+    }
+
+    .container2 {
+        background-size: 1000%;
+    }
+
+    .foto2 {
+        width: 100%;
+    }
+
+    
     footer {
         font-size: 8px;
         margin: 0px;
         justify-items: center;
-    }
+    }          
+
     }
 
 </style>
@@ -213,6 +262,19 @@
     <main>
         <img class="container" src="./Images/fondo 1.png"></img>
         <img class="matrix" src="./Images/matrix contin.png"></img>
+        <div class="container2">
+            <div class="clavos1">
+                <img class="foto2 mov1" src="./Images/clavos3 2.jpeg">
+            </div>
+
+            <div class="pinturas1">
+                <img class="foto2 mov1" src="./Images/colorful-2468874_1280.jpeg">
+            </div>
+
+            <div class="sacos1">
+                <img class="foto2 mov1" src="./Images/bobina saco.jpeg">
+            </div>
+        </div>
     </main>
 
     <footer>
