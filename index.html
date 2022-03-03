@@ -17,18 +17,29 @@
         background-color: black;
         color: white;
         display: flex;
+        justify-content: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
     .logoh{
         display: flex;
     }
 
-    main {
-        background-color: tomato;
-    }
-
     .headerlinks {
         display: flex;
+    }
+    
+    footer {
+        background-color: tomato;
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+        padding-bottom: 10px;    
+    }
+
+    main {
+        background-color: tomato;
     }
 
     .lang {
@@ -41,9 +52,20 @@
     margin: 0px;
     }
 
+    @media screen and (max-width: 720px) {
+        html {
+        font-size: 55.5%;
+    }}
+
+    @media screen and (max-width: 420px) {
+        html {
+        font-size: 55.5%;
+    }
+    }
+
     @media screen and (max-width: 320px) {
     html {
-        font-size: 75.5%;
+        font-size: 50.5%;
     }
 
     body {
@@ -53,8 +75,11 @@
     header {
         margin: 0px;
         height: auto;
+        width: auto;
     }
-
+    footer {
+        justify-items: center;
+    }
     }
 
 </style>
@@ -80,7 +105,10 @@
     </main>
 
     <footer>
-
+        <div class="footer">
+            <!--<img class="logo2" src="Images/logo.png">-->
+            <div>Copyright © LAC Lan Access Control 2022 - globalbasquetrader@gmail.com</div>
+        </div>
     </footer>
 
 </body>
