@@ -22,7 +22,6 @@
         padding-top: 12px;
         padding-bottom: 12px;
         justify-content: space-between;
-        align-items: center;
     }
 
     .logoh{
@@ -54,12 +53,15 @@
     }
 
     .en {
-    width: 20px;
-    height: 15px;
+        width: 20px;
+        height: 15px;
     }
 
     .container {
         max-width: 100%;
+        background-image: url("Images/fondo\ 1.png");
+        background-repeat: no-repeat;
+        height: 100%;
     }
     
     .matrix {
@@ -81,8 +83,8 @@
         max-height: 1000px;
         padding-top: 30px;
         padding-bottom: 30px;
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 10px;
+        padding-right: 10px;
         display: flex;
         flex-direction: column;
         gap: 55px;
@@ -96,6 +98,20 @@
         box-shadow: 1px 1px 1px 1px;
     }
 
+    .clavos1,
+    .sacos1,
+    .pinturas1 {
+        display: flex;
+        gap: 30px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .text1 {
+        
+    }
+
+
     footer {
         background-color: white;
         font-size: 15px;
@@ -108,58 +124,24 @@
 
     @media screen and (max-width: 720px) {
     
-    .headerlinks,
-    .logoh,
-    footer {
-        font-size: 80%;
-        margin-left: 1%;
-    }
-    .headerlinks {
-        margin-right: 1%;
-    }
-    body {
-        margin: 0px;
-    }
-    footer {
-        font-size: 11px;
-        margin: 0px;
-        justify-items: center;
-    }
     }
 
     @media screen and (max-width: 420px) {
     
-    .headerlinks,
-    .logoh,
-    footer {
-        font-size: 65%;
-        margin-left: 1%;
-    }
-    .headerlinks {
-        margin-right: 1%;
-    }
-    body {
-        margin: 0px;
-    }
-
-    .foto2 {
-        width: 100%;
-    }
-    footer {
-        font-size: 10px;
-        margin: 0px;
-        justify-items: center;
-    }
     }
 
     @media screen and (max-width: 320px) and (orientation: portrait) {
 
     .headerlinks,
     .logoh,
-    footer {
+    footer,
+    .text1 {
         font-size: 55%;
         padding-left: 0%;
+    }
 
+    .logoh {
+        margin-left: 2%;
     }
 
     .headerlinks {
@@ -171,7 +153,7 @@
     }
 
     .container {
-
+        
     }
 
     .matrix {
@@ -185,9 +167,13 @@
     }
 
     .foto2 {
-        
-        height: 60%;
-        width: 60%;
+        height: 40%;
+        width: 40%;
+    }
+
+    .clavos1,
+    .sacos1 {
+        gap: 20px;
     }
 
     
@@ -200,7 +186,7 @@
 
     @media screen and (max-width: 655px) and (orientation: landscape) {
 
-        .headerlinks,
+    .headerlinks,
     .logoh,
     footer {
         font-size: 55%;
@@ -246,7 +232,7 @@
 </style>
 
 <body>
-    
+
     <header>
         <div class="logoh">
             <img class="logo" src="./Images/logo.png"></img>
@@ -262,20 +248,23 @@
     </header>
 
     <main>
-        <!--<div class="container">prueba</div>-->
-        <img class="container" src="./Images/fondo 1.png"></img>
+        <img class="container" src="./Images/fondo 1.png">
+
         <img class="matrix" src="./Images/matrix contin.png"></img>
         <div class="container2">
             <div class="clavos1">
                 <img class="foto2 mov1" src="./Images/clavos3 2.jpeg">
+                <div class="text1">LAC suministra a distintas empresas de alambrón de acero, en todas sus variedades, para producir  distintos tipos de clavos.</div>
             </div>
 
             <div class="pinturas1">
+                <div class="text1">LAC suministra a distintas empresas de alambrón de acero, en todas sus variedades, para producir  distintos tipos de clavos.</div>
                 <img class="foto2 mov1" src="./Images/colorful-2468874_1280.jpeg">
             </div>
 
             <div class="sacos1">
                 <img class="foto2 mov1" src="./Images/bobina saco.jpeg">
+                <div class="text1">LAC suministra a distintas empresas el polipropileno necesario para producir sacos tejidos con cintas de polipropileno virgen.</div>
             </div>
         </div>
     </main>
