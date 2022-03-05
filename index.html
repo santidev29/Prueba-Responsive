@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lan Access Control</title>
     <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 </head>
 
 <style>
+
+    html {
+        scroll-behavior: smooth;
+    }
 
     body {
         margin: 0px;
@@ -400,6 +405,75 @@
 
     }
 
+    /* IMG MAPING */
+
+    .imgmaping {
+        display: flex;
+        width: 100%;
+        height: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        max-width: 550px;
+        max-height: 330px;
+        margin-left: auto;
+        margin-right: auto;    
+    }
+
+    #image-map {
+    position: relative;
+    margin: 10px auto 70px auto;
+
+    }
+
+    .pin {
+        display: none;
+    }
+
+    .tooltip-up, .tooltip-down {
+        position: absolute;
+        background: url(https://i.imgur.com/13rZbuk.png);
+        width: 25px;
+        height: 37px;
+    }
+
+    .tooltip-down {
+        background-position: 0 -37px;
+    }
+
+    .tooltip::after {
+        content: '';
+        position: absolute;
+        top: -10px;
+        left: 50%;
+        margin-left: -10px;
+        border-bottom: 10px solid #fff1d3;
+        border-left: 10px solid transparent;
+        border-right : 10px solid transparent;
+    }
+
+    .tooltip-down .tooltip {
+        bottom: 12px;
+        top: auto;
+    }
+
+    .tooltip-down .tooltip::after {
+        bottom: -10px;
+        top: auto;
+        border-bottom: 0;
+        border-top: 10px solid #ffdb90;
+    }
+
+    .tooltip h2 {
+        font: bold 1.3em 'Trebuchet MS', Tahoma, Arial;
+        margin: 0 0 10px;
+    }
+    
+    .tooltip ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
 </style>
 
 <body>
@@ -425,9 +499,30 @@
                 LAC cubre distintos sectores tales como la logística, la agricultura y la construcción.
                  </div>
         </div>
+
+
+
+
         
 
-        <img class="matrix" src="./Images/matrix contin.png"></img>
+        <div id="image-map">
+            <img class="imgmaping" src="Images/matrix contin.png" alt="Our Locations">
+            <div class="pin pin-down" data-xpos="89" data-ypos="110">  
+                <h2>Cuba</h2>     
+            </div>
+            <div class="pin pin-down" data-xpos="232" data-ypos="65">  
+                <h2>España</h2>     
+            </div>
+            <div class="pin pin-down" data-xpos="430" data-ypos="88">  
+                <h2>China</h2>     
+            </div>
+        </div>
+        
+
+
+
+
+        <!--<img class="matrix" src="./Images/matrix contin.png"></img>-->
         <div class="container2">
             <div class="clavos1">
                 <img class="foto2 mov1" src="./Images/clavos3 2.jpeg">
@@ -454,4 +549,40 @@
     </footer>
 
 </body>
+
+<script>
+    $(document).ready(function(){
+        // set the image-map width and height to match the img size
+        $('#image-map').css({'width':$('#image-map img').width(),
+                          'height':$('#image-map img').height()
+        })
+        
+        //tooltip direction
+        var tooltipDirection;
+                     
+        for (i=0; i<$(".pin").length; i++)
+        {               
+            // set tooltip direction type - up or down             
+            if ($(".pin").eq(i).hasClass('pin-down')) {
+                tooltipDirection = 'tooltip-down';
+            } else {
+                tooltipDirection = 'tooltip-up';
+                }
+        
+            // append the tooltip
+            $("#image-map").append("<div style='left:"+$(".pin").eq(i).data('xpos')+"px;top:"+$(".pin").eq(i).data('ypos')+"px' class='" + tooltipDirection +"'>\
+                                                <div class='tooltip'>" + $(".pin").eq(i).html() + "</div>\
+                                        </div>");
+        }    
+        
+        // show/hide the tooltip
+        $('.tooltip-up, .tooltip-down').mouseenter(function(){
+                    $(this).children('.tooltip').fadeIn(100);
+                }).mouseleave(function(){
+                    $(this).children('.tooltip').fadeOut(100);
+                })
+    });
+
+</script>
+
 </html>
