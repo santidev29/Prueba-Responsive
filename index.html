@@ -42,9 +42,9 @@
         align-items: center;
     }
 
-    .logo {
-        width: 50px;
-        height: 30px;
+    .logo { /* 50 30*/
+        width: 70px;
+        height: 50px;
         margin: 0px;
     }
 
@@ -331,6 +331,10 @@
         height: 80%;
     }
 
+    .imgmaping {
+        max-width: 100%;
+    }
+
     .container {
         background-image: url(./Images/fondo2.png);
         max-width: 100%;
@@ -357,7 +361,7 @@
         font-size: 8px;
         margin: 0px;
         justify-items: center;
-    }
+    }    
     }
 
     @media screen and (max-width: 655px) and (orientation: landscape) {
@@ -402,7 +406,6 @@
         margin: 0px;
         justify-items: center;
     }          
-
     }
 
     /* IMG MAPING */
@@ -421,58 +424,82 @@
 
     #image-map {
     position: relative;
-    margin: 10px auto 70px auto;
-
+    margin: 10px auto 60px auto;
     }
 
-    .pin {
-        display: none;
-    }
+/* Hide the original tooltips contents */
+.pin {
+    display: none;
+}
 
-    .tooltip-up, .tooltip-down {
-        position: absolute;
-        background: url(https://i.imgur.com/13rZbuk.png);
-        width: 25px;
-        height: 37px;
-    }
+/* Begin styling the tooltips and pins */
+.tooltip-up, .tooltip-down {
+    position: absolute;
+    background: url(./Images/location2.png);
+    background-size: 150%;
+    width: 25px;
+    height: 37px;
+}
 
-    .tooltip-down {
-        background-position: 0 -37px;
-    }
+.tooltip-down {
+    background-position: 0 -37px;
+}
 
-    .tooltip::after {
-        content: '';
-        position: absolute;
-        top: -10px;
-        left: 50%;
-        margin-left: -10px;
-        border-bottom: 10px solid #fff1d3;
-        border-left: 10px solid transparent;
-        border-right : 10px solid transparent;
-    }
+.tooltip {
+    display: none;
+    text-align: center;
+    width: 50px;
+    text-shadow: 0 1px 0 #fff;
+    position: absolute;
+    top: 10px;
+    /*left: 50%;*/
+    z-index: 999;
+    margin-left: -8px;
+    margin-top: 5px;
+    padding-top: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+    color: #222;
+    border-radius: 5px;
+    box-shadow: 0 3px 0 rgba(0,0,0,.7);
+    background: #fdfdfd;
+    background: linear-gradient(top, #fff1d3, #ffdb90);
+    font-size: 12px;         
+}
 
-    .tooltip-down .tooltip {
-        bottom: 12px;
-        top: auto;
-    }
+.tooltip::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    margin-left: -10px;
+    border-bottom: 10px solid #fff1d3;
+    border-left: 10px solid transparent;
+    border-right : 10px solid transparent;
+}
 
-    .tooltip-down .tooltip::after {
-        bottom: -10px;
-        top: auto;
-        border-bottom: 0;
-        border-top: 10px solid #ffdb90;
-    }
+.tooltip-down .tooltip {
+    bottom: 12px;
+    top: auto;
+}
 
-    .tooltip h2 {
-        font: bold 1.3em 'Trebuchet MS', Tahoma, Arial;
-        margin: 0 0 10px;
-    }
-    
-    .tooltip ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-    }
+.tooltip-down .tooltip::after {
+    bottom: -10px;
+    top: auto;
+    border-bottom: 0;
+    border-top: 10px solid black;
+}
+
+.tooltip h2 {
+    font: bold 1.3em 'Trebuchet MS', Tahoma, Arial;
+    margin: 0 0 2px;
+}
+
+.tooltip ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
 </style>
 
@@ -480,8 +507,8 @@
 
     <header>
         <div class="logoh">
-            <img class="logo" src="./Images/logo.png"></img>
-            <div class="LAC"> Lan Access Control</div>
+            <img class="logo" src="./Images/LOGO1.png"></img>
+            <div style="font-size: 15px;" class="LAC"> LAC Global Basque Trader</span></div>
         </div>
         <div class="headerlinks">
             <div>globalbasquetrader@gmail.com</div>
@@ -504,19 +531,21 @@
 
 
         
+            <div id="image-map">
+                <img class="imgmaping" src="Images/matrix contin copy.png" alt="Our Locations">
+                <div class="pin pin-down" data-xpos="85" data-ypos="115">  
+                    <h2>Cuba</h2>     
+                </div>
+                <div class="pin pin-down" data-xpos="226" data-ypos="72">  
+                    <h2>España</h2>     
+                </div>
+                <div class="pin pin-down" data-xpos="430" data-ypos="84">  
+                    <h2>China</h2>     
+                </div>
+            </div>
 
-        <div id="image-map">
-            <img class="imgmaping" src="Images/matrix contin.png" alt="Our Locations">
-            <div class="pin pin-down" data-xpos="89" data-ypos="110">  
-                <h2>Cuba</h2>     
-            </div>
-            <div class="pin pin-down" data-xpos="232" data-ypos="65">  
-                <h2>España</h2>     
-            </div>
-            <div class="pin pin-down" data-xpos="430" data-ypos="88">  
-                <h2>China</h2>     
-            </div>
-        </div>
+            
+        
         
 
 
@@ -550,39 +579,6 @@
 
 </body>
 
-<script>
-    $(document).ready(function(){
-        // set the image-map width and height to match the img size
-        $('#image-map').css({'width':$('#image-map img').width(),
-                          'height':$('#image-map img').height()
-        })
-        
-        //tooltip direction
-        var tooltipDirection;
-                     
-        for (i=0; i<$(".pin").length; i++)
-        {               
-            // set tooltip direction type - up or down             
-            if ($(".pin").eq(i).hasClass('pin-down')) {
-                tooltipDirection = 'tooltip-down';
-            } else {
-                tooltipDirection = 'tooltip-up';
-                }
-        
-            // append the tooltip
-            $("#image-map").append("<div style='left:"+$(".pin").eq(i).data('xpos')+"px;top:"+$(".pin").eq(i).data('ypos')+"px' class='" + tooltipDirection +"'>\
-                                                <div class='tooltip'>" + $(".pin").eq(i).html() + "</div>\
-                                        </div>");
-        }    
-        
-        // show/hide the tooltip
-        $('.tooltip-up, .tooltip-down').mouseenter(function(){
-                    $(this).children('.tooltip').fadeIn(100);
-                }).mouseleave(function(){
-                    $(this).children('.tooltip').fadeOut(100);
-                })
-    });
-
-</script>
+<script src="./script.js"></script>
 
 </html>
