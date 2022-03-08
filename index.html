@@ -24,12 +24,13 @@
         background-color:white;
         color:black;
         display: flex;
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding-top: 5px;
+        padding-bottom: 1px;
         justify-content: space-between;
         position: fixed;
         top:0;
         margin-top: 0;
+        margin-bottom: 0;
         width: 100%;
         z-index: 99;
     }
@@ -43,8 +44,8 @@
     }
 
     .logo { /* 50 30*/
-        width: 70px;
-        height: 50px;
+        width: 95px;
+        height: 55px;
         margin: 0px;
     }
 
@@ -72,7 +73,7 @@
         background-repeat: no-repeat;
         background-size: 100%;
         padding-bottom: 10%;
-        margin-top: 55px;
+        margin-top: 70px;
     }
 
     .text0 {
@@ -299,6 +300,10 @@
         padding-left: 0%;
     }
 
+    header {
+        max-width: 100%;
+    }
+
     .text0 {
         color: black;
         margin-left: 10%;
@@ -508,8 +513,8 @@
 
     <header>
         <div class="logoh">
-            <img class="logo" src="./Images/LOGO1.png"></img>
-            <div style="font-size: 15px;" class="LAC"> LAC Global Basque Trader</span></div>
+            <img class="logo" src="./Images/LOGO8.png"></img>
+            <div style="font-size: 15px;" class="LAC"></div>
         </div>
         <div class="headerlinks">
             <div>globalbasquetrader@gmail.com</div>
@@ -534,22 +539,18 @@
         
             <div id="image-map">
                 <img class="imgmaping" src="Images/matrix contin copy.png" alt="Our Locations">
-                <div class="pin pin-down" data-xpos="85" data-ypos="115">  
+                <div class="pin pin-down cuba" data-xpos="85" data-ypos="115">  
                     <h2>Cuba</h2>     
                 </div>
-                <div class="pin pin-down" data-xpos="226" data-ypos="72">  
+                <div class="pin pin-down españa" data-xpos="226" data-ypos="72">  
                     <h2>España</h2>     
                 </div>
-                <div class="pin pin-down" data-xpos="430" data-ypos="84">  
+                <div class="pin pin-down china" data-xpos="430" data-ypos="84">  
                     <h2>China</h2>     
                 </div>
             </div>
 
-            
         
-        
-
-
 
 
         <!--<img class="matrix" src="./Images/matrix contin.png"></img>-->
@@ -581,5 +582,22 @@
 </body>
 
 <script src="./script.js"></script>
+
+<script>
+
+    let mapa = document.querySelector('cuba')
+
+    var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+
+    if (width < 320) {
+
+    }
+
+    console.log(mapa);
+
+    
+
+
+</script>
 
 </html>
