@@ -1,0 +1,469 @@
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+   color: inherit;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+   margin: 0px;
+   font-family: century-gothic;
+}
+
+header {
+   background-color:white;
+   color:black;
+   display: flex;
+   padding-top: 5px;
+   padding-bottom: 1px;
+   justify-content: space-between;
+   position: fixed;
+   top:0;
+   margin-top: 0;
+   margin-bottom: 0;
+   width: 100%;
+   z-index: 99;
+}
+
+.logoh{
+   display: flex;
+   margin-left: 60px;
+   font-size: 20px;
+   font-weight: bold;
+   align-items: center;
+}
+
+.logo {
+   width: 95px;
+   height: 55px;
+   margin: 0px;
+}
+
+.headerlinks {
+   display: flex;
+   margin-right: 60px;
+   font-size: 15px;
+   gap: 5px;
+   align-items: center;
+}
+
+.lang {
+   display: flex;
+   align-items: center;
+   gap: 5px;
+}
+
+.en {
+   width: 20px;
+   height: 15px;
+}
+
+.container {
+   background-image: url("Images/fondo1.png");
+   background-repeat: no-repeat;
+   background-size: 100%;
+   padding-bottom: 10%;
+   margin-top: 70px;
+}
+
+.text0 {
+   margin-left: 5%;
+   margin-right: 45%;
+   padding-top: 7%;
+   margin-bottom: 0px;
+   font-weight: bold;
+   font-size: 17px;
+   color: white;
+}
+
+.matrix {
+   display: flex;
+   width: 100%;
+   height: auto;
+   padding-top: 30px;
+   padding-bottom: 30px;
+   max-width: 550px;
+   max-height: 330px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.container2 {
+   background-image: url("Images/IMG_5354.JPG");
+   background-repeat: no-repeat;
+   background-size: 400%;
+   max-height: 1000px;
+   padding-top: 30px;
+   padding-bottom: 30px;
+   display: flex;
+   gap: 50px;
+   justify-content: center;
+}
+
+.foto2 {
+   width: 370px;
+   height: 205px;
+   opacity: 90%;
+   border-radius: 2%;
+   box-shadow: 1px 1px 1px 1px;
+}
+
+.foto2:hover {
+   opacity: 50%;
+}
+
+.clavos1,
+.sacos1,
+.pinturas1 {
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+   align-items: center;
+   
+}
+
+.text1 {
+   font-size: 15px;
+   max-width: 300px;
+   text-align: center;
+}
+
+
+footer {
+   background-color: white;
+   font-size: 15px;
+   display: flex;
+   justify-content: center;
+   padding-top: 13px;
+   padding-bottom: 13px;
+   margin: 0px;
+}
+
+@media screen and (max-width: 425px) and (orientation: portrait) {
+
+.headerlinks,
+.logoh,
+footer{
+   font-size: 75%;
+   padding-left: 0%;
+}
+
+header {
+   max-width: 100%;
+}
+
+.logo {
+   width: 85px;
+   height: 45px; 
+}
+
+.text0 {
+   color: black;
+   margin-left: 10%;
+   margin-right: 10%;
+   padding-top: 84%;
+   font-size: 73%;
+   font-weight: normal;
+}
+
+.text1 {
+   font-size: 75%;
+   text-align: center;
+}
+
+.logoh {
+   margin-left: 2%;
+}
+
+.headerlinks {
+   margin-right: 2%;
+}
+
+body {
+   margin: 0px;
+}
+
+.matrix {
+   justify-content: center;
+   width: 80%;
+   height: 80%;
+}
+
+.container {
+   background-image: url(./Images/fondo2.png);
+   max-width: 100%;
+   padding-bottom: 0%;
+   padding-top: 0%;
+   
+}
+
+.container2 {
+   background-size: 1000%;
+   gap: 25px;
+   flex-direction: column;
+}
+
+.foto2 {
+   height: 55%;
+   width: 55%;
+}
+
+.clavos1,
+.sacos1 {
+   gap: 20px;
+}
+
+footer {
+   font-size: 10px;
+   margin: 0px;
+   justify-items: center;
+}
+
+}
+
+@media screen and (max-width: 375px) and (orientation: portrait) {
+
+.headerlinks,
+.logoh,
+footer{
+   font-size: 65%;
+   padding-left: 0%;
+}
+
+header {
+   max-width: 100%;
+}
+
+.logo {
+   width: 85px;
+   height: 45px; 
+}
+
+.text0 {
+   color: black;
+   margin-left: 10%;
+   margin-right: 10%;
+   padding-top: 84%;
+   font-size: 73%;
+   font-weight: normal;
+}
+
+.text1 {
+   font-size: 75%;
+   text-align: center;
+}
+
+.logoh {
+   margin-left: 2%;
+}
+
+.headerlinks {
+   margin-right: 2%;
+}
+
+body {
+   margin: 0px;
+}
+
+.matrix {
+   justify-content: center;
+   width: 80%;
+   height: 80%;
+}
+
+.container {
+   background-image: url(./Images/fondo2.png);
+   max-width: 100%;
+   padding-bottom: 0%;
+   padding-top: 0%;
+   
+}
+
+.container2 {
+   background-size: 1000%;
+   gap: 25px;
+   flex-direction: column;
+}
+
+.foto2 {
+   height: 45%;
+   width: 45%;
+}
+
+.clavos1,
+.sacos1 {
+   gap: 20px;
+}
+
+footer {
+   font-size: 8px;
+   margin: 0px;
+   justify-items: center;
+}
+
+}
+
+@media screen and (max-width: 320px) and (orientation: portrait) {
+
+.headerlinks,
+.logoh,
+footer{
+   font-size: 55%;
+}
+
+header {
+   max-width: 100%;
+}
+
+.logo {
+   width: 85px;
+   height: 45px; 
+}
+
+.text0 {
+   color: black;
+   margin-left: 10%;
+   margin-right: 10%;
+   padding-top: 84%;
+   font-size: 73%;
+   font-weight: normal;
+}
+
+.text1 {
+   font-size: 75%;
+   text-align: center;
+}
+
+.logoh {
+   margin-left: 2%;
+}
+
+.headerlinks {
+   margin-right: 32%;
+}
+
+body {
+   margin: 0px;
+}
+
+.matrix {
+   justify-content: center;
+   width: 80%;
+   height: 80%;
+}
+
+.container {
+   background-image: url(./Images/fondo2.png);
+   max-width: 100%;
+   padding-bottom: 0%;
+   padding-top: 0%;
+   
+}
+
+.container2 {
+   background-size: 1000%;
+   gap: 25px;
+   display: flex;
+   flex-direction: column;
+}
+
+.foto2 {
+   height: 45%;
+   width: 45%;
+}
+
+.clavos1,
+.sacos1 {
+   gap: 20px;
+}
+
+footer {
+   font-size: 8px;
+   margin: 0px;
+   justify-items: center;
+}
+}
+
+@media screen and (max-width: 655px) and (orientation: landscape) {
+ 
+    .headerlinks,
+    .logoh,
+    footer{
+       font-size: 55%;
+    }
+    
+    header {
+       max-width: 100%;
+    }
+    
+    .logo {
+       width: 85px;
+       height: 45px; 
+    }
+    
+    .text0 {
+       color: black;
+       margin-left: 10%;
+       margin-right: 10%;
+       padding-top: 84%;
+       font-size: 73%;
+       font-weight: normal;
+    }
+    
+    .text1 {
+       font-size: 75%;
+       text-align: center;
+    }
+    
+    .logoh {
+       margin-left: 2%;
+    }
+    
+    .headerlinks {
+       margin-right: 32%;
+    }
+    
+    body {
+       margin: 0px;
+    }
+    
+    .matrix {
+       justify-content: center;
+       width: 80%;
+       height: 80%;
+    }
+    
+    .container {
+       background-image: url(./Images/fondo2.png);
+       max-width: 100%;
+       padding-bottom: 0%;
+       padding-top: 0%;
+       
+    }
+    
+    .container2 {
+       background-size: 1000%;
+       gap: 25px;
+       display: flex;
+       flex-direction: column;
+    }
+    
+    .foto2 {
+       height: 45%;
+       width: 45%;
+    }
+    
+    .clavos1,
+    .sacos1 {
+       gap: 20px;
+    }
+    
+    footer {
+       font-size: 8px;
+       margin: 0px;
+       justify-items: center;
+    }   
+
+}
