@@ -1,0 +1,138 @@
+section{
+    /*height: 100vh;*/
+    width: 100%;
+    display: flex;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+  }
+  .containerMatrix{
+    width: 90%;
+    max-width: 550px;
+    max-height: 330px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .containerMatrix img{
+    height: 100%;
+    width: 100%;
+  }
+  .all-tooltip{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+  
+  .tooltip-content{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 20px #00000020;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius:8px;
+    width: 90vw;
+    max-width: 300px;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 2;
+  }
+  .tooltip-content .arrow{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 10px solid transparent;
+    border-bottom-color: rgb(255, 255, 255);
+    top: 0px;
+    transform:translate(-50%, -100%) rotate(0deg);
+  }
+  .pin{
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 80%;
+    height: 25px;
+    width: 25px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .pin:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+  }
+  .tooltip.active .tooltip-content{
+    opacity: 1;
+    pointer-events: all;
+    display: block;
+  }
+  
+  /* Custom Style for tooltip-1 */
+  
+  .tooltip-1 .pin{
+    top: 21%;
+    left: 43%;
+    height: 15px;
+    width: 15px;
+    background-color: rgb(255, 255, 255);
+  }
+  .tooltip-1 .tooltip-content{
+    display: flex;
+    max-width: 100px;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+  }
+
+  /* Custom Style for tooltip-2 */
+  
+  .tooltip-2 .pin{
+    top: 34%;
+    left: 18%;
+    height: 15px;
+    width: 15px;
+    background-color: rgb(255, 255, 255);
+  }
+  .tooltip-2 .tooltip-content{
+    display: flex;
+    max-width: 100px;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+  }
+
+  /* Custom Style for tooltip-3 */
+  
+  .tooltip-3 .pin{
+    top: 37%;
+    left: 80%;
+    height: 15px;
+    width: 15px;
+    background-color: rgb(255, 255, 255);
+  }
+  .tooltip-3 .tooltip-content{
+    display: flex;
+    max-width: 100px;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+  }
+   
+  /* Media Query */
+  
+  @media (max-width: 768px){
+    .tooltip-1 .tooltip-content{
+      max-width: 100px;
+    }
+    .tooltip-1 .tooltip-content .content,
+    .tooltip-1 .tooltip-content .img{
+      width: 100%;
+    }
+  }

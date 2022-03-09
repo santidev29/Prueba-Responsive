@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lan Access Control</title>
     <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
+    <script src="https://code.jquery.com/jquery-1.6.3.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <style>
@@ -42,7 +44,7 @@
         align-items: center;
     }
 
-    .logo { /* 50 30*/
+    .logo {
         width: 95px;
         height: 55px;
         margin: 0px;
@@ -84,11 +86,6 @@
         font-size: 17px;
         color: white;
     }
-    
-    /*.mobile {
-        max-width: 100%;
-        height: auto;
-    }*/
     
     .matrix {
         display: flex;
@@ -160,7 +157,7 @@
      
     }
 
-    @media screen and (max-width: 320px) and (orientation: portrait) {
+   @media screen and (max-width: 320px) and (orientation: portrait) {
 
     .headerlinks,
     .logoh,
@@ -236,7 +233,7 @@
         font-size: 8px;
         margin: 0px;
         justify-items: center;
-    }    
+    }
     }
 
     @media screen and (max-width: 655px) and (orientation: landscape) {
@@ -246,7 +243,7 @@
 </style>
 
 <body>
-
+    
     <header>
         <div class="logoh">
             <img class="logo" src="./Images/LOGO8.png"></img>
@@ -269,9 +266,34 @@
             </div>
         </div>
 
-        <img class="matrix" src="./Images/matrix contin.png"></img>
-
-
+        <section>
+            <div class="containerMatrix">
+              <img src="./Images/matrix contin copy.png" alt="">
+              <div class="all-tooltip">
+                <div class=" tooltip tooltip-1">
+                  <div class="pin"></div>
+                  <div class="tooltip-content">
+                    <div class="arrow"></div>
+                    <div class="content">España</div>
+                  </div>
+                </div>
+                <div class=" tooltip tooltip-2">
+                  <div class="pin"></div>
+                  <div class="tooltip-content">
+                    <div class="arrow"></div>
+                    <div class="content">Cuba</div>
+                  </div>
+                </div>
+                <div class=" tooltip tooltip-3">
+                  <div class="pin"></div>
+                  <div class="tooltip-content">
+                    <div class="arrow"></div>
+                    <div class="content">China</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
 
         <div class="container2">
             <div class="clavos1">
@@ -297,6 +319,8 @@
             <div>Copyright © LAC Lan Access Control 2022 - globalbasquetrader@gmail.com</div>
         </div>
     </footer>
+
+    <script src="./main.js"></script>
 
 </body>
 
