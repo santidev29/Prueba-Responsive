@@ -95,6 +95,7 @@ header {
    background-repeat: no-repeat;
    background-size: 400%;
    max-height: 1000px;
+   height: auto;
    padding-top: 30px;
    padding-bottom: 30px;
    display: flex;
@@ -226,7 +227,7 @@ footer {
        justify-items: center;
     }
     }
-
+    
 @media screen and (max-width: 768px) and (orientation: landscape) {
     .headerlinks,
     .logoh,
@@ -472,7 +473,6 @@ footer {
    margin: 0px;
    justify-items: center;
 }
-
 }
 
 @media screen and (max-width: 320px) and (orientation: portrait) {
@@ -555,169 +555,3 @@ footer {
    justify-items: center;
 }
 }
-
-/*@media screen and (max-width: 667px) and (orientation: landscape) {
-   .headerlinks,
-   .logoh,
-   footer{
-      font-size: 75%;
-      padding-left: 0%;
-   }
-   
-   header {
-      max-width: 100%;
-   }
-   
-   .logo {
-      width: 85px;
-      height: 45px; 
-   }
-   
-   .text0 {
-      color: black;
-      margin-left: 10%;
-      margin-right: 10%;
-      margin-bottom: 1%;
-      padding-top: 30%;
-      padding-bottom: 2%;
-      font-size: 60%;
-      font-weight: normal;
-   }
-   
-   .text1 {
-      font-size: 60%;
-      text-align: center;
-      height: auto;
-   }
-   
-   .logoh {
-      margin-left: 2%;
-   }
-   
-   .headerlinks {
-      margin-right: 2%;
-   }
-   
-   body {
-      margin: 0px;
-   }
-   
-   .matrix {
-      justify-content: center;
-      width: 80%;
-      height: 80%;
-   }
-   
-   .container {
-      background-image: url(./Images/fondo1.png);
-      max-width: 100%;
-      padding-bottom: 0%;
-      padding-top: 0%;
-   }
-   
-   .container2 {
-      background-size: 1000%;
-      gap: 10px;
-      height: auto;
-      flex-direction: column;
-      padding-bottom: 20px;
-   }
-   
-   .foto2 {
-      height: 25%;
-      width: 30%;
-   }
-   
-   .clavos1,
-   .sacos1,
-   .pinturas1 {
-      gap: 20px;
-   }
-   
-   footer {
-      font-size: 10px;
-      margin: 0px;
-      justify-items: center;
-   }
-   }*/
-
-/*@media screen and (max-width: 655px) and (orientation: landscape) {
- 
-    .headerlinks,
-    .logoh,
-    footer{
-       font-size: 55%;
-    }
-    
-    header {
-       max-width: 100%;
-    }
-    
-    .logo {
-       width: 85px;
-       height: 45px; 
-    }
-    
-    .text0 {
-       color: black;
-       margin-left: 10%;
-       margin-right: 10%;
-       padding-top: 84%;
-       font-size: 73%;
-       font-weight: normal;
-    }
-    
-    .text1 {
-       font-size: 75%;
-       text-align: center;
-    }
-    
-    .logoh {
-       margin-left: 2%;
-    }
-    
-    .headerlinks {
-       margin-right: 32%;
-    }
-    
-    body {
-       margin: 0px;
-    }
-    
-    .matrix {
-       justify-content: center;
-       width: 80%;
-       height: 80%;
-    }
-    
-    .container {
-       background-image: url(./Images/fondo2.png);
-       max-width: 100%;
-       padding-bottom: 0%;
-       padding-top: 0%;
-       
-    }
-    
-    .container2 {
-       background-size: 1000%;
-       gap: 25px;
-       display: flex;
-       flex-direction: column;
-    }
-    
-    .foto2 {
-       height: 45%;
-       width: 45%;
-    }
-    
-    .clavos1,
-    .sacos1 {
-       gap: 20px;
-    }
-    
-    footer {
-       font-size: 8px;
-       margin: 0px;
-       justify-items: center;
-    }   
-}*/
