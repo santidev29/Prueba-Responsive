@@ -580,12 +580,12 @@ footer {
       margin-bottom: 1%;
       padding-top: 30%;
       padding-bottom: 2%;
-      font-size: 50%;
+      font-size: 60%;
       font-weight: normal;
    }
    
    .text1 {
-      font-size: 75%;
+      font-size: 60%;
       text-align: center;
    }
    
@@ -619,12 +619,11 @@ footer {
       background-size: 1000%;
       gap: 25px;
       height: 250px;
-      
    }
    
    .foto2 {
-      height: 45%;
-      width: 55%;
+      height: 25%;
+      width: 45%;
    }
    
    .clavos1,
