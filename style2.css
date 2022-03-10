@@ -142,6 +142,16 @@ footer {
    margin: 0px;
 }
 
+@media screen and (max-width: 1024px) and (orientation: portrait) {
+}
+
+@media screen and (max-width: 834px) and (orientation: portrait) {
+}
+
+@media screen and (max-width: 768px) and (orientation: portrait) {
+
+}
+
 @media screen and (max-width: 425px) and (orientation: portrait) {
 
 .headerlinks,
@@ -505,7 +515,7 @@ footer {
    }
    
    .text1 {
-      font-size: 75%;
+      font-size: 50%;
       text-align: center;
    }
    
@@ -538,8 +548,7 @@ footer {
    .container2 {
       background-size: 1000%;
       gap: 25px;
-      height: 250px;
-      
+      height: auto;
    }
    
    .foto2 {
@@ -551,6 +560,7 @@ footer {
    .sacos1,
    .pinturas1 {
       gap: 20px;
+      max-width: 200px;
    }
    
    footer {
