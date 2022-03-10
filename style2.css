@@ -556,7 +556,7 @@ footer {
 }
 }
 
-@media screen and (max-width: 655px) and (orientation: landscape) {
+/*@media screen and (max-width: 655px) and (orientation: landscape) {
  
     .headerlinks,
     .logoh,
@@ -635,5 +635,4 @@ footer {
        margin: 0px;
        justify-items: center;
     }   
-
-}
+}*/
