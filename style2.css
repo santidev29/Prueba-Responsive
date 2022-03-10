@@ -481,10 +481,6 @@ footer {
       justify-items: center;
    }
    }
-
-@media screen and (max-width: 768px) and (orientation: landscape) {
-
-}   
    
 @media screen and (max-width: 768px) and (orientation: landscape) {
    .headerlinks,
@@ -575,7 +571,8 @@ footer {
    .headerlinks,
    .logoh,
    footer{
-      font-size: 55%;
+      font-size: 75%;
+      padding-left: 0%;
    }
    
    header {
@@ -591,13 +588,15 @@ footer {
       color: black;
       margin-left: 10%;
       margin-right: 10%;
-      padding-top: 29%;
-      font-size: 50%;
+      margin-bottom: 1%;
+      padding-top: 30%;
+      padding-bottom: 2%;
+      font-size: 73%;
       font-weight: normal;
    }
    
    .text1 {
-      font-size: 75%;
+      font-size: 50%;
       text-align: center;
    }
    
@@ -631,22 +630,22 @@ footer {
       background-size: 1000%;
       gap: 25px;
       height: auto;
-      display: flex;
-      flex-direction: column;
    }
    
    .foto2 {
-      height: 35%;
-      width: 35%;
+      height: 45%;
+      width: 55%;
    }
    
    .clavos1,
-   .sacos1 {
+   .sacos1,
+   .pinturas1 {
       gap: 20px;
+      max-width: 200px;
    }
    
    footer {
-      font-size: 8px;
+      font-size: 10px;
       margin: 0px;
       justify-items: center;
    }
