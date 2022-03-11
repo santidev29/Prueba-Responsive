@@ -624,8 +624,10 @@ footer {
    }
    
    .text1 {
-      font-size: 75%;
+      font-size: 60%;
       text-align: center;
+      height: auto;
+      max-width: 150px;
    }
    
    .logoh {
@@ -656,16 +658,16 @@ footer {
    
    .container2 {
       background-size: 1000%;
-      gap: 25px;
+      gap: 2px;
       display: flex;
-      flex-direction: column;
       margin-left: auto;
       margin-right: auto;
+      height: auto;
    }
    
    .foto2 {
-      height: 45%;
-      width: 45%;
+      height: 35%;
+      width: 35%;
    }
    
    .clavos1,
@@ -678,5 +680,4 @@ footer {
       margin: 0px;
       justify-items: center;
    }
-   
    }
