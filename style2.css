@@ -30,15 +30,23 @@ header {
 .logoh{
    display: flex;
    margin-left: 60px;
+   gap:0px;
    font-size: 20px;
    font-weight: bold;
    align-items: center;
 }
 
 .logo {
-   width: 95px;
+   width: 85px;
    height: 55px;
    margin: 0px;
+}
+
+.logo-01 {
+   width: 85px;
+   height: 35px;
+   margin-left: 0px;
+   margin-right: 0px;
 }
 
 .headerlinks {
@@ -163,11 +171,19 @@ footer{
 
 header {
    max-width: 100%;
+   flex-direction: column;
+   align-items: center;
+   gap: 2px;
 }
 
 .logo {
-   width: 85px;
-   height: 45px; 
+   width: 65px;
+   height: 35px; 
+}
+
+.logo-01 {
+   width: 60px;
+   height: 20px;
 }
 
 .text0 {
@@ -245,11 +261,19 @@ footer{
 
 header {
    max-width: 100%;
+   flex-direction: column;
+   align-items: center;
+   gap: 2px;
 }
 
 .logo {
-   width: 85px;
-   height: 45px; 
+   width: 65px;
+   height: 35px; 
+}
+
+.logo-01 {
+   width: 60px;
+   height: 20px;
 }
 
 .text0 {
@@ -325,11 +349,19 @@ footer{
 
 header {
    max-width: 100%;
+   flex-direction: column;
+   align-items: center;
+   gap: 2px;
 }
 
 .logo {
-   width: 85px;
-   height: 45px; 
+   width: 65px;
+   height: 35px; 
+}
+
+.logo-01 {
+   width: 60px;
+   height: 20px;
 }
 
 .text0 {
@@ -351,7 +383,7 @@ header {
 }
 
 .headerlinks {
-   margin-right: 32%;
+   /*margin-right: 32%;*/
 }
 
 body {
@@ -566,7 +598,7 @@ footer {
    }
    }
 
-/*@media screen and (max-width: 667px) and (orientation: landscape) {
+@media screen and (max-width: 667px) and (orientation: landscape) {
    .headerlinks,
    .logoh,
    footer{
@@ -647,4 +679,4 @@ footer {
       justify-items: center;
    }
    
-   }*/
+   }
