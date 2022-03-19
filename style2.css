@@ -69,7 +69,7 @@ header {
 }
 
 .container {
-   background-image: url("Images/fondo1.png");
+   background-image: url("./Images/fondo1.png");
    background-repeat: no-repeat;
    background-size: 100%;
    padding-bottom: 10%;
